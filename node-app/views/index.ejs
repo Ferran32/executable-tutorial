@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random Joke App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+      background-color: #f4f4f9;
+    }
+    .joke {
+      background: white;
+      display: inline-block;
+      padding: 20px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="joke">
+    <h2><%= joke.setup %></h2>
+    <p><strong><%= joke.punchline %></strong></p>
+    <a href="/" style="text-decoration:none;">
+      <button>😂 New Joke</button>
+    </a>
+  </div>
+</body>
+</html>
