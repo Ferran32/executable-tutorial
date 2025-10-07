@@ -5,7 +5,7 @@ FROM node:18-alpine
 WORKDIR /usr/src/app
 
 # Copy package.json and package-lock.json first (for better caching)
-COPY package*.json ./
+COPY node-app/package*.json ./
 
 # Install dependencies
 RUN npm install --production
