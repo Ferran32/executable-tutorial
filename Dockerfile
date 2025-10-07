@@ -11,7 +11,7 @@ COPY package*.json ./
 RUN npm install --production
 
 # Copy the rest of the app source code
-COPY . .
+COPY ./node-app .
 
 # Expose the app port
 EXPOSE 3000
